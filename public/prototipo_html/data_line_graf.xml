@@ -1,0 +1,92 @@
+  <graph bgColor="F1f1f1" caption="Performance Comercial" subCaption="Janeiro de 2006 a Dezembro de 2006" numdivlines="4" lineThickness="3" showValues="0" numVDivLines="10" formatNumberScale="2" rotateNames="0" decimalPrecision="2" anchorRadius="2" anchorBgAlpha="0" numberPrefix="R$ " divLineAlpha="30" showAlternateHGridColor="1" yAxisMinValue="800000" shadowAlpha="50" decimalSeparator="," thousandSeparator=".">
+  <categories>
+  <category Name="Jan" /> 
+  <category Name="Feb" /> 
+  <category Name="Mar" /> 
+  <category Name="Apr" /> 
+  <category Name="May" /> 
+  <category Name="Jun" /> 
+  <category Name="Jul" /> 
+  <category Name="Aug" /> 
+  <category Name="Sep" /> 
+  <category Name="Oct" /> 
+  <category Name="Nov" /> 
+  <category Name="Dec" /> 
+  </categories>
+  <dataset seriesName="Toyota" color="0000CC" anchorBorderColor="A66EDD" anchorRadius="4">
+  <set value="5250" /> 
+  <set value="12260" /> 
+  <set value="16990" /> 
+  <set value="13110" /> 
+  <set value="8240" /> 
+  <set value="13570" /> 
+  <set value="8960" /> 
+  <set value="9590" /> 
+  <set value="13910" /> 
+  <set value="9140" /> 
+  <set value="16710" /> 
+  <set value="11340" /> 
+  </dataset>
+
+  <dataset seriesName="Traffic" color="FF0000" anchorBorderColor="FF0000" anchorRadius="4">
+  <set value="2500" /> 
+  <set value="1200" /> 
+  <set value="0" /> 
+  <set value="3400" /> 
+  <set value="2800" /> 
+  <set value="6000" /> 
+  <set value="8000" /> 
+  <set value="2200" /> 
+  <set value="3200" /> 
+  <set value="2000" /> 
+  <set value="0" /> 
+  <set value="3300" /> 
+  </dataset>
+
+<dataset seriesName="Unicoba" color="336600" anchorBorderColor="FF0000" anchorRadius="4">
+  <set value="1200" /> 
+  <set value="3200" /> 
+  <set value="2320" /> 
+  <set value="3400" /> 
+  <set value="2100" /> 
+  <set value="4000" /> 
+  <set value="5400" /> 
+  <set value="3400" /> 
+  <set value="3400" /> 
+  <set value="3400" /> 
+  <set value="2110" /> 
+  <set value="2300" /> 
+  </dataset>
+
+<dataset seriesName="WebMotors" color="FF9900" anchorBorderColor="FF0000" anchorRadius="4">
+  <set value="12500" /> 
+  <set value="12200" /> 
+  <set value="16000" /> 
+  <set value="3400" /> 
+  <set value="12800" /> 
+  <set value="2000" /> 
+  <set value="5000" /> 
+  <set value="6200" /> 
+  <set value="7200" /> 
+  <set value="4000" /> 
+  <set value="0" /> 
+  <set value="0" /> 
+  </dataset>
+
+<dataset seriesName="TIM" color="003300" anchorBorderColor="FF0000" anchorRadius="4">
+  <set value="1500" /> 
+  <set value="2200" /> 
+  <set value="3434" /> 
+  <set value="4400" /> 
+  <set value="6800" /> 
+  <set value="7000" /> 
+  <set value="9000" /> 
+  <set value="6200" /> 
+  <set value="5200" /> 
+  <set value="4000" /> 
+  <set value="3444" /> 
+  <set value="2300" /> 
+  </dataset>
+
+
+  </graph>

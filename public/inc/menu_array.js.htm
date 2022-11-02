@@ -1,0 +1,288 @@
+
+/// ### JAVASCRIPT CODE STARTS HERE ###
+//The following line is critical for menu operation, and MUST APPEAR ONLY ONCE.
+menunum=0;menus=new Array();_d=document;function addmenu(){menunum++;menus[menunum]=menu;}function dumpmenus(){mt="<script language=JavaScript>";for(a=1;a<menus.length;a++){mt+=" menu"+a+"=menus["+a+"];"}mt+="<\/script>";_d.write(mt)}
+//Please leave the above line intact. The above also needs to be enabled if it not already enabled unless you have more than one _array.js file
+
+
+////////////////////////////////////
+// Editable properties START here //
+////////////////////////////////////
+
+timegap=500                   // The time delay for menus to remain visible
+followspeed=5                 // Follow Scrolling speed
+followrate=50                 // Follow Scrolling Rate
+suboffset_top=5               // Sub menu offset Top position
+suboffset_left=10             // Sub menu offset Left position
+imagedir="img/menu/"
+
+
+
+XPMainStyle=[                 // XPMainStyle is an array of properties. You can have as many property arrays as you need
+"000000",                     // Mouse Off Font Color
+"transparent",                     // Mouse Off Background Color (use zero for transparent in Netscape 6)
+"000000",                     // Mouse On Font Color
+"C1D2EE",                     // Mouse On Background Color
+"8A867A",                     // Menu Border Color
+"11",                         // Font Size (default is px but you can specify mm, pt or a percentage)
+"normal",                     // Font Style (italic or normal)
+"normal",                     // Font Weight (bold or normal)
+"Tahoma,Helvetica,Verdana",   // Font Name
+3,                            // Menu Item Padding or spacing
+,                             // Sub Menu Image (Leave this blank if not needed)
+0,                            // 3D Border & Separator bar
+,                             // 3D High Color
+,                             // 3D Low Color
+,                             // Current Page Item Font Color (leave this blank to disable)
+,                             // Current Page Item Background Color (leave this blank to disable)
+,                             // Top Bar image (Leave this blank to disable)
+,                             // Menu Header Font Color (Leave blank if headers are not needed)
+,                             // Menu Header Background Color (Leave blank if headers are not needed)
+,                             // Menu Item Separator Color
+]
+
+
+XPMenuStyle=[                 // XPMenuStyle is an array of properties. You can have as many property arrays as you need
+"000000",                     // Mouse Off Font Color
+"transparent",                // Mouse Off Background Color (use zero for transparent in Netscape 6)
+"000000",                     // Mouse On Font Color
+"C1D2EE",                     // Mouse On Background Color
+"8A867A",                     // Menu Border Color
+"11",                         // Font Size (default is px but you can specify mm, pt or a percentage)
+"normal",                     // Font Style (italic or normal)
+"normal",                     // Font Weight (bold or normal)
+"Tahoma,Helvetica,Verdana",   // Font Name
+2,                            // Menu Item Padding or spacing
+,                             // Sub Menu Image (Leave this blank if not needed)
+0,                            // 3D Border & Separator bar
+,                             // 3D High Color
+,                             // 3D Low Color
+,                             // Current Page Item Font Color (leave this blank to disable)
+,                             // Current Page Item Background Color (leave this blank to disable)
+,                             // Top Bar image (Leave this blank to disable)
+,                             // Menu Header Font Color (Leave blank if headers are not needed)
+,                             // Menu Header Background Color (Leave blank if headers are not needed)
+,                             // Menu Item Separator Color
+]
+
+
+addmenu(menu=[
+"XPMain",                     // Menu Name - This is needed in order for this menu to be called
+45,                           // Menu Top - The Top position of this menu in pixels
+20,                           // Menu Left - The Left position of this menu in pixels
+,                             // Menu Width - Menus width in pixels
+,                             // Menu Border Width
+"left",                     // Screen Position - here you can use "center;left;right;middle;top;bottom" or a combination of "center:middle"
+XPMainStyle,                  // Properties Array - this array is declared higher up as you can see above
+1,                            // Always Visible - allows this menu item to be visible at all time (1=on or 0=off)
+,                             // Alignment - sets this menu elements text alignment, values valid here are: left, right or center
+,                             // Filter - Text variable for setting transitional effects on menu activation - see above for more info
+0,                            // Follow Scrolling Top Position - Tells this menu to follow the user down the screen on scroll placing the menu at the value specified.
+1,                            // Horizontal Menu - Tells this menu to display horizontaly instead of top to bottom style (1=on or 0=off)
+0,                            // Keep Alive - Keeps the menu visible until the user moves over another menu or clicks elsewhere on the page (1=on or 0=off)
+,                             // Position of TOP sub image left:center:right
+3,                            // Set the Overall Width of Horizontal Menu to specified width or 100% and height to a specified amount
+0,                            // Right To Left - Used in Hebrew for example. (1=on or 0=off)
+0,                            // Open the Menus OnClick - leave blank for OnMouseover (1=on or 0=off)
+,                             // ID of the div you want to hide on MouseOver (useful for hiding form elements)
+imagedir+"winxp_back.gif",// Background image for menu Color must be set to transparent for this to work
+0,                            // Scrollable Menu
+,                             // Miscellaneous Menu Properties
+,"&nbsp;&nbsp;<img src='img/menu/agence.gif' border=0>&nbsp;Agence&nbsp;&nbsp;","show-menu=Lega1","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src='img/menu/task_icon.gif' border=0>&nbsp;Projetos&nbsp;&nbsp;","show-menu=Lega2","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src='img/menu/administrativo.gif' border=0>&nbsp;Administrativo&nbsp;&nbsp;","show-menu=Lega3","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src='img/menu/comercial.gif' border=0>&nbsp;Comercial&nbsp;&nbsp;","show-menu=Lega4","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src='img/menu/fichario.gif' border=0>&nbsp;Financeiro&nbsp;&nbsp;","show-menu=Lega5","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src='img/menu/info_pessoa.gif' border=0>&nbsp;Usuário&nbsp;&nbsp;","show-menu=Lega6","# offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,1
+
+,"&nbsp;<img src=img/cancel.gif border=0>&nbsp;Sair&nbsp;&nbsp;","index.php?logout=1 offbackcolor=FFFFFF;onbordercolor=316AC5;offbordercolor=FFFFFF;",,,1
+
+
+])
+
+
+addmenu(menu=[
+"Lega1", // Agence
+,
+,
+200,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+
+
+])
+
+
+addmenu(menu=[
+"Lega2", // Fábrica de Software
+,
+,
+240,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+
+
+])
+
+
+addmenu(menu=[
+"Lega3", // Administrativo
+,
+,
+200,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+
+
+
+])
+
+
+
+addmenu(menu=[
+"Lega4", // Comercial
+,
+,
+200,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+,"&nbsp;&nbsp;Performance Comercial","con_desempenho.htm onbordercolor=316AC5;offbordercolor=FFFFFF;",,,0
+
+
+
+
+])
+
+
+addmenu(menu=[
+"Lega5", // Financeiro
+,
+,
+200,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+
+
+
+])
+
+addmenu(menu=[
+"Lega6", // Usuário
+,
+,
+200,
+1,
+,
+XPMenuStyle,
+0,
+,
+"fade(duration=0);Shadow(color=aaaaaa,Direction=115,Strength=4)",
+0,
+0,
+0,
+,
+,
+0,
+0,
+,
+imagedir+"winxp_back.gif",
+0,
+"margin=2;",
+
+
+
+
+
+])
+
+dumpmenus();

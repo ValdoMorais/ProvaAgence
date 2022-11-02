@@ -1,0 +1,55 @@
+  <graph bgColor="F1f1f1" caption="Performance Comercial" subCaption="Janeiro de 2007 a Maio de 2007" showValues="0" divLineDecimalPrecision="2" formatNumberScale="2" limitsDecimalPrecision="2" PYAxisName="" SYAxisName="" decimalSeparator="," thousandSeparator="." SYAxisMaxValue="32000" PYAxisMaxValue="32000">
+
+  <categories>
+  <category name="Jan" hoverText="Janeiro" /> 
+  <category name="Fev" hoverText="Fevereiro" /> 
+  <category name="Mar" hoverText="Março" /> 
+  <category name="Abr" hoverText="Abril" /> 
+  <category name="Mai" hoverText="Maio" /> 
+
+  </categories>
+  <dataset seriesName="Carlos Flávio" color="#FF6600" numberPrefix="R$ ">
+  <set value="24000" /> 
+  <set value="30004" /> 
+  <set value="14000" /> 
+  <set value="23000" /> 
+  <set value="16000" /> 
+
+  </dataset>
+    <dataset seriesName="Ana Paula" color="#660000" numberPrefix="R$ ">
+  <set value="5008" /> 
+  <set value="4100" /> 
+  <set value="1300" /> 
+  <set value="1800" /> 
+  <set value="2200" /> 
+  </dataset>
+
+    <dataset seriesName="Carlos Henrique" color="#000099" numberPrefix="R$ ">
+  <set value="15004" /> 
+  <set value="24001" /> 
+  <set value="23000" /> 
+  <set value="18000" /> 
+  <set value="22000" /> 
+  </dataset>
+
+    <dataset seriesName="Renato Marcus" color="#006600" numberPrefix="R$ ">
+  <set value="5400" /> 
+  <set value="4100" /> 
+  <set value="1300" /> 
+  <set value="1800" /> 
+  <set value="2200" /> 
+  </dataset>
+
+  <dataset lineThickness="3" seriesName="Custo Fixo Médio" numberPrefix="R$ " parentYAxis="S" color="FF0000" anchorBorderColor="FF8000">
+  <set value="2000" /> 
+  <set value="2000" /> 
+  <set value="2000" /> 
+  <set value="2000" /> 
+  <set value="2000" /> 
+
+
+  </dataset>
+
+
+
+  </graph>

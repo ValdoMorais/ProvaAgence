@@ -1,0 +1,7 @@
+  <graph caption="Participação na Receita" bgColor="F1f1f1" decimalPrecision="1" showPercentageValues="1" showNames="1" numberPrefix="" showValues="1" showPercentageInLabel="1" pieYScale="45" pieBorderAlpha="40" pieFillAlpha="70" pieSliceDepth="15" pieRadius="100">
+  <set value="20" name="Bruno Sousa Freitas" color="FF9966" /> 
+  <set value="40.5" name="Carlos Flávio Girão de Arruda" color="FF0000" /> 
+  <set value="10" name="Carlos Henrique de Carvalho Filho" color="006F00" isSliced="1" /> 
+  <set value="20" name="Renato Marcus Pereira" color="0099FF" /> 
+  <set value="9.5" name="Silvio Marães Ferreira" color="CCCC00" /> 
+  </graph>

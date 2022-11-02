@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GenericController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+//Routas Dinamicas
+Route::get('comercial',[GenericController::class, 'comercial']);
+
