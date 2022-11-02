@@ -19,10 +19,10 @@
 					<div class="tab-content" id="tabContent">
 					  <div class="tab-pane fade active" id="consultores" role="tabpanel" aria-labelledby="consultores-tab">
 							<form method="post" id="consultor_form">
-									{{-- {{ csrf_field() }}
+									@csrf
 									@if (isset($model))
 											<input type="hidden" name="_method1" value="PATCH">
-									@endif --}}
+									@endif
 									<input type="hidden" id="consultor_url_relatorio" value="{{ url('usuario/relatorio') }}">
 									<input type="hidden" id="consultor_url_grafico_barra" value="{{ url('usuario/grafico_barra') }}">
 									<input type="hidden" id="consultor_url_grafico_pizza" value="{{ url('usuario/grafico_pizza') }}">
@@ -44,9 +44,9 @@
 									<div class="form-group field-consultor">
 									 <label>Consultor:</label>
 									 <select id="consultor" name="consultor[]" multiple class="form-control" >
-											 {{-- @foreach($usuarios as $u)
-												 <option value="{{ $u->CO_USUARIO }}">{{ $u->NO_USUARIO }}</option>
-											 @endforeach --}}
+											 @foreach($usuarios as $usua)
+												 <option value="{{ $usua->CO_USUARIO }}">{{ $usua->NO_USUARIO }}</option>
+											 @endforeach
 									 </select>
 									</div>
 									<div class="form-group">
@@ -61,7 +61,7 @@
 						</div>
 					  <div class="tab-pane fade" id="clientes" role="tabpanel" aria-labelledby="clientes-tab">
 								<form method="post" id="cliente_form">
-										{{ csrf_field() }}
+										@csrf
 										@if (isset($model))
 												<input type="hidden" name="_method2" value="PATCH">
 										@endif
@@ -86,9 +86,9 @@
 										<div class="form-group field-cliente">
 										 <label>Cliente: </label>
 										 <select id="cliente" name="cliente[]" multiple class="form-control" >
-												 {{-- @foreach($clientes as $c)
-													 <option value="{{ $c->CO_CLIENTE }}">{{ substr($c->NO_FANTASIA, 0, 25) }}</option>
-												 @endforeach --}}
+												 @foreach($clientes as $cli)
+													 <option value="{{ $cli->CO_CLIENTE }}">{{ substr($cli->NO_FANTASIA, 0, 25) }}</option>
+												 @endforeach
 										 </select>
 										</div>
 										<div class="form-group">
