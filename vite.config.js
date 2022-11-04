@@ -13,12 +13,6 @@ export default defineConfig({
             ],
             refresh: true,
         }),
-         server: {
-            hmr: {
-              clientPort: 443
-            },
-          },
-
         vue({
             template: {
                 transformAssetUrls: {
@@ -28,6 +22,12 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+         hmr: {
+           clientPort: 443
+            },
+          },
+    
     resolve: {
         alias: {
             vue: 'vue/dist/vue.esm-bundler.js',
