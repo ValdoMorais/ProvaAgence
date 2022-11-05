@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
     <!-- Date Picker -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('https://testeagence.herokuapp.com//css/bootstrap-datepicker.css') }}">
 
     <!-- MultiSelect -->
     <link rel="stylesheet" href="{{ asset('css/bootstrap-multiselect.css') }}">
