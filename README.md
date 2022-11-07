@@ -24,6 +24,8 @@ mysql> use `prova_agencedb`;
 mysql> source prova_agencedb.sql
 Volte o terminal, verifique o arquivo .env e efetue a configuração correta para conexão do seu banco de dados.
 
+no arquivo App/Providers/AppServicesProvider comente a linha 28.
+
     
 Depois de realizado isso, rode o projeto:
 $ php artisan serve
