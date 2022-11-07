@@ -105,10 +105,10 @@
         				<a href="#"><img src="images/menu/info_pessoa.gif" width="18"><br>
         				Usuário</a>
         			</div>
-        			<div class="icon-top">
+        			{{-- <div class="icon-top">
         				<a href="#"><img src="images/menu/cancel.gif" width="18"><br>
         				Sair</a>
-        			</div>
+                        </div> --}}
         		</div>
             <div class="menu-logo">
               <a href="http://www.agence.com.br/" target=_blank>
