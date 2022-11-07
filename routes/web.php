@@ -44,6 +44,7 @@ Route::post('cliente/grafico_pizza', [ClienteController::class, 'grafico_pizza']
 
 Route::get('home', [GenericController::class, 'home'])->name('home');
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
