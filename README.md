@@ -2,7 +2,11 @@
  Pacote de avaliacao da Agence Brasil
  -Controle de actividades online terminada em Laravel
  
-Instalação
+## Dependencias
+- Laravel 9.0
+- php 8.0
+ 
+## Instalação
 $ git clone https://github.com/ValdoMoraisFlor/ProvaAgence.git
 
 $ cd ProvaAgence
@@ -41,6 +45,8 @@ Ou pode logar usuando o usuário Admin já cadastrado:
 
 - Usuário: admin@admin.com
 - Senha: 1234
+
+Disponivel em : https://testeagence.herokuapp.com/
 
 
 License
