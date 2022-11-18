@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
             // comente o statement a baixo se nao estiver em producao!
-            URL:: forceScheme('https');
+           // URL:: forceScheme('https');
 
         
     }

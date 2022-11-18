@@ -82,33 +82,33 @@
         <div class="container-menu">
         		<div class="menu">
         			<div class="icon-top">
-        				<a href="#"><img src="images/menu/agence.gif" width="18"><br>
+        				<a href="#"><img src="images/menu1/agence.svg" width="18"><br>
         				Agence</a>
         			</div>
         			<div class="icon-top">
-        				<a href="#"><img src="images/menu/task_icon.gif" width="18"><br>
+        				<a href="#"><img src="images/menu1/task_icon.svg" width="18"><br>
         				Projetos</a>
         			</div>
         			<div class="icon-top">
-        				<a href="#"><img src="images/menu/administrativo.gif" width="18"><br>
+        				<a href="#"><img src="images/menu1/administrativo.svg" width="18"><br>
         				Administ.</a>
         			</div>
         			<div class="icon-top">
-        				<a href="{{ url('comercial') }}"><img src="images/menu/comercial.gif" width="18"><br>
+        				<a href="{{ url('comercial') }}"><img src="images/menu1/comercial.svg" width="18"><br>
         				Comercial</a>
         			</div>
         			<div class="icon-top">
-        				<a href="#"><img src="images/menu/fichario.gif" width="18"><br>
+        				<a href="#"><img src="images/menu1/fichario.svg" width="18"><br>
         				Financeiro</a>
         			</div>
         			<div class="icon-top">
-        				<a href="#"><img src="images/menu/info_pessoa.gif" width="18"><br>
+        				<a href="#"><img src="images/menu1/info_pessoa.svg" width="18"><br>
         				Usuário</a>
         			</div>
-        			<div class="icon-top">
+        			{{-- <div class="icon-top">
         				<a href="#"><img src="images/menu/cancel.gif" width="18"><br>
         				Sair</a>
-        			</div>
+        			</div> --}}
         		</div>
             <div class="menu-logo">
               <a href="http://www.agence.com.br/" target=_blank>
