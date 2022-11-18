@@ -2,7 +2,11 @@
  Pacote de avaliacao da Agence Brasil
  -Controle de actividades online terminada em Laravel
  
-Instalação
+## Dependencias
+- Laravel 9.0
+- php 8.0
+ 
+## Instalação
 $ git clone https://github.com/ValdoMoraisFlor/ProvaAgence.git
 
 $ cd ProvaAgence
@@ -24,6 +28,8 @@ mysql> use `prova_agencedb`;
 mysql> source prova_agencedb.sql
 Volte o terminal, verifique o arquivo .env e efetue a configuração correta para conexão do seu banco de dados.
 
+no arquivo App/Providers/AppServicesProvider comente a linha 28.
+
     
 Depois de realizado isso, rode o projeto:
 $ php artisan serve
@@ -39,6 +45,8 @@ Ou pode logar usuando o usuário Admin já cadastrado:
 
 - Usuário: admin@admin.com
 - Senha: 1234
+
+Disponivel em : https://testeagence.herokuapp.com/
 
 
 License
