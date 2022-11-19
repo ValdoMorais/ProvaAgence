@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Cliente;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 
@@ -182,4 +183,24 @@ class ClienteController extends Controller
     public function porcentagem_receita($parcial, $total) {
         return ($parcial/$total)*100;
     }
+
+    public function teste(){
+        
+        //$result = Cliente::orderBy('no_fantasia')->where('TP_CLIENTE', '=', 'A')->get(['CO_CLIENTE', 'NO_FANTASIA']);
+            // $result = DB::select('SELECT CAU.CO_USUARIO, CAU.NO_USUARIO
+            //         FROM CAO_USUARIO AS CAU
+            //         LEFT JOIN PERMISSAO_SISTEMA AS PES ON CAU.CO_USUARIO = PES.CO_USUARIO
+            //         WHERE PES.CO_SISTEMA = 1 AND PES.IN_ATIVO = "S" AND CO_TIPO_USUARIO IN (0, 1, 2)
+            //         ORDER BY CAU.NO_USUARIO');
+            
+                    $result = DB::table('CAO_USUARIO')->orderBy('CAO_USUARIO.CO_USUARIO')->leftjoin('PERMISSAO_SISTEMA','CAO_USUARIO.CO_USUARIO', '=', 'PERMISSAO_SISTEMA.CO_USUARIO')
+                    // ->select('cao_usuario.co_usuario', 'cao_usuario.no_usuario')    
+                    ->where('PERMISSAO_SISTEMA.CO_SISTEMA','=',1 )
+                    ->Where('PERMISSAO_SISTEMA.IN_ATIVO', '=', 'S')
+                    ->WhereBetween('PERMISSAO_SISTEMA.CO_TIPO_USUARIO', [0,2])
+                    ->get('CAO_USUARIO.CO_USUARIO', 'CAO_USUARIO.NO_USUARIO');  
+                    return $result;
+            
+                        dd($result);
+                    }
 }

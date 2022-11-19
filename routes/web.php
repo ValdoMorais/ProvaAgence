@@ -35,7 +35,7 @@ Route::post('usuario/grafico_pizza', [UsuarioController::class, 'grafico_pizza']
 Route::post('cliente/relatorio', [ClienteController::class, 'relatorio'])->name('cliente.relatorio');
 Route::post('cliente/grafico_linha', [ClienteController::class, 'grafico_linha'])->name('cliente.grafico_linha');
 Route::post('cliente/grafico_pizza', [ClienteController::class, 'grafico_pizza'])->name('cliente.grafico_pizza');
-
+Route::get('teste', [ClienteController::class, 'teste'])->name('cliente.teste');
 //HomeController
 // Route::post('entrar', [HomeController::class, 'entrar'])->name('entrar'); 
 // Route::post('registrar', [HomeController::class, 'registrar'])->name('registrar'); 
